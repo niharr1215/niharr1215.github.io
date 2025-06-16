@@ -16,12 +16,14 @@ author: "Nihar Ranjan"
       box-sizing: border-box;
     }
     body {
+      background-color: #fafafa;
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-repeat: repeat;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       margin: 0;
       padding: 1.5rem 2rem;
-      background-color: #f9fafb;
-      color: #24292e;
+      color: #2d333b; /* dark gray */
       line-height: 1.6;
       max-width: 900px;
       margin-left: auto;
@@ -35,19 +37,24 @@ author: "Nihar Ranjan"
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 0.2rem;
-      color: #0366d6;
+      color: #0052cc; /* strong blue for name */
     }
     header h2 {
       font-weight: 500;
-      color: #57606a;
+      color: #57606a; /* muted gray-blue for subtitle */
       font-size: 1.25rem;
       margin-top: 0;
+      font-style: italic;
     }
 
     section {
       margin-bottom: 2.5rem;
       padding-bottom: 1rem;
-      border-bottom: 1px solid #e1e4e8;
+      border-bottom: 1px solid #d1d5db; /* lighter gray */
+      background-color: rgba(255,255,255,0.9);
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgb(0 0 0 / 0.05);
     }
     section:last-of-type {
       border-bottom: none;
@@ -55,28 +62,30 @@ author: "Nihar Ranjan"
     section h3 {
       font-size: 1.4rem;
       margin-bottom: 0.75rem;
-      color: #24292e;
-      font-weight: 600;
-      border-left: 4px solid #0366d6;
+      color: #0041a8; /* darker blue accent for section headers */
+      font-weight: 700;
+      border-left: 4px solid #0052cc;
       padding-left: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
     .subheading {
       font-weight: 600;
-      color: #57606a;
-      font-size: 1rem;
+      color: #1e2a78; /* medium blue for job titles */
+      font-size: 1.05rem;
       margin-bottom: 0.25rem;
     }
     p, ul {
       margin: 0.25rem 0 1rem 0;
       font-size: 1rem;
+      color: #3b4048; /* standard dark gray */
     }
     ul {
       padding-left: 1.25rem;
       list-style-type: disc;
-      color: #24292e;
     }
     a {
-      color: #0366d6;
+      color: #0052cc;
       text-decoration: none;
     }
     a:hover {
@@ -86,6 +95,7 @@ author: "Nihar Ranjan"
       list-style: none;
       padding-left: 0;
       font-size: 1rem;
+      color: #3b4048;
     }
     .contact-list li {
       margin-bottom: 0.5rem;
@@ -94,8 +104,8 @@ author: "Nihar Ranjan"
       text-align: center;
       margin-top: 4rem;
       font-size: 0.9rem;
-      color: #57606a;
-      border-top: 1px solid #e1e4e8;
+      color: #818a99; /* lighter gray */
+      border-top: 1px solid #d1d5db;
       padding-top: 1rem;
     }
     @media (max-width: 600px) {
@@ -121,7 +131,7 @@ author: "Nihar Ranjan"
     <section>
       <h3>Contact</h3>
       <ul class="contact-list">
-        <li>📍 Bimarcstrasse 60, 51373 Leverkusen, Germany</li>
+        <li>📍 <span style="color:#6b7280;">Bimarcstrasse 60, 51373 Leverkusen, Germany</span></li>
         <li>📞 <a href="tel:+4915217566352">+49 1521 756 6352</a></li>
         <li>✉️ <a href="mailto:niharranjan91@gmail.com">niharranjan91@gmail.com</a></li>
       </ul>
@@ -131,15 +141,15 @@ author: "Nihar Ranjan"
       <h3>Professional Experience</h3>
       <div>
         <p class="subheading">Tech Architecture Associate</p>
-        <p><strong>Accenture, Düsseldorf</strong> — Nov 2024 - Present</p>
+        <p><strong>Accenture, Düsseldorf</strong> — <span style="color:#6b7280;">Nov 2024 - Present</span></p>
       </div>
       <div>
         <p class="subheading">Data Specialist</p>
-        <p><strong>Sommer GmbH & Co. KG, Hörstel</strong> — Jul 2021 - Mar 2023</p>
+        <p><strong>Sommer GmbH & Co. KG, Hörstel</strong> — <span style="color:#6b7280;">Jul 2021 - Mar 2023</span></p>
       </div>
       <div>
         <p class="subheading">SAP BI Developer (Freelance)</p>
-        <p>Mar 2020 - Jul 2021</p>
+        <p><span style="color:#6b7280;">Mar 2020 - Jul 2021</span></p>
       </div>
     </section>
 
@@ -147,12 +157,12 @@ author: "Nihar Ranjan"
       <h3>Education</h3>
       <div>
         <p class="subheading">M.Sc. Artificial Intelligence</p>
-        <p><strong>University of York</strong> — Apr 2023 - Present</p>
-        <p>Guest student at RWTH Aachen (Oct 2023 - Sep 2024)</p>
+        <p><strong>University of York</strong> — <span style="color:#6b7280;">Apr 2023 - Present</span></p>
+        <p><em>Guest student at RWTH Aachen (Oct 2023 - Sep 2024)</em></p>
       </div>
       <div>
         <p class="subheading">B.Sc. Computer Engineering</p>
-        <p><strong>University of Duisburg-Essen</strong> — Oct 2013 - Sep 2019</p>
+        <p><strong>University of Duisburg-Essen</strong> — <span style="color:#6b7280;">Oct 2013 - Sep 2019</span></p>
         <p>Project: Performance comparison in KNIME and Eidominer using neural networks (Mar-May 2018)</p>
         <p>Thesis: Self Organising Maps (SOM) with Python (Jun-Sep 2019)</p>
       </div>
@@ -177,4 +187,5 @@ author: "Nihar Ranjan"
   </footer>
 </body>
 </html>
+
 
