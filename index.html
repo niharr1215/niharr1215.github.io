@@ -7,119 +7,174 @@ author: "Nihar Ranjan"
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            border-bottom: 2px solid #000; 
-            padding-bottom: 10px;
-        }
-        .section {
-            margin-top: 20px;
-        }
-        .section h2 {
-            margin-bottom: 5px;
-        }
-        .section p {
-            margin: 5px 0;
-        }
-        .contact-info {
-            list-style-type: none;
-            padding: 0;
-        }
-        @media (max-width: 600px) {
-            body {
-                margin: 10px;
-            }
-        }
-        footer {
-            text-align: center;
-            margin-top: 50px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }}</title>
+  <style>
+    /* Base reset */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 1.5rem 2rem;
+      background-color: #f9fafb;
+      color: #24292e;
+      line-height: 1.6;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 0.2rem;
+      color: #0366d6;
+    }
+    header h2 {
+      font-weight: 500;
+      color: #57606a;
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e1e4e8;
+    }
+    section:last-of-type {
+      border-bottom: none;
+    }
+    section h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      color: #24292e;
+      font-weight: 600;
+      border-left: 4px solid #0366d6;
+      padding-left: 0.75rem;
+    }
+    .subheading {
+      font-weight: 600;
+      color: #57606a;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    p, ul {
+      margin: 0.25rem 0 1rem 0;
+      font-size: 1rem;
+    }
+    ul {
+      padding-left: 1.25rem;
+      list-style-type: disc;
+      color: #24292e;
+    }
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1rem;
+    }
+    .contact-list li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #57606a;
+      border-top: 1px solid #e1e4e8;
+      padding-top: 1rem;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      section h3 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Nihar Ranjan</h1>
+    <h2>Software Engineer | Tech Architecture Associate</h2>
+  </header>
 
-    <header>
-        <h1>Nihar Ranjan</h1>
-        <h2>Profile</h2>
-    </header>
+  <main>
+    <section>
+      <h3>Contact</h3>
+      <ul class="contact-list">
+        <li>📍 Bimarcstrasse 60, 51373 Leverkusen, Germany</li>
+        <li>📞 <a href="tel:+4915217566352">+49 1521 756 6352</a></li>
+        <li>✉️ <a href="mailto:niharranjan91@gmail.com">niharranjan91@gmail.com</a></li>
+      </ul>
+    </section>
 
-    <main>
-        <div class="section">
-            <h4>Address</h4>
-            <p>Bimarcstrasse 60, 51373 Leverkusen, Germany</p>
-        </div>
+    <section>
+      <h3>Professional Experience</h3>
+      <div>
+        <p class="subheading">Tech Architecture Associate</p>
+        <p><strong>Accenture, Düsseldorf</strong> — Nov 2024 - Present</p>
+      </div>
+      <div>
+        <p class="subheading">Data Specialist</p>
+        <p><strong>Sommer GmbH & Co. KG, Hörstel</strong> — Jul 2021 - Mar 2023</p>
+      </div>
+      <div>
+        <p class="subheading">SAP BI Developer (Freelance)</p>
+        <p>Mar 2020 - Jul 2021</p>
+      </div>
+    </section>
 
-        <div class="section">
-            <h4>Contact Information</h4>
-            <ul class="contact-info">
-                <li>Telephone: <a href="tel:+4915217566352">+4915217566352</a></li>
-                <li>Email: <a href="mailto:niharranjan91@gmail.com">niharranjan91@gmail.com</a></li>
-            </ul>
-        </div>
+    <section>
+      <h3>Education</h3>
+      <div>
+        <p class="subheading">M.Sc. Artificial Intelligence</p>
+        <p><strong>University of York</strong> — Apr 2023 - Present</p>
+        <p>Guest student at RWTH Aachen (Oct 2023 - Sep 2024)</p>
+      </div>
+      <div>
+        <p class="subheading">B.Sc. Computer Engineering</p>
+        <p><strong>University of Duisburg-Essen</strong> — Oct 2013 - Sep 2019</p>
+        <p>Project: Performance comparison in KNIME and Eidominer using neural networks (Mar-May 2018)</p>
+        <p>Thesis: Self Organising Maps (SOM) with Python (Jun-Sep 2019)</p>
+      </div>
+    </section>
 
-        
+    <section>
+      <h3>Skills & Interests</h3>
+      <p><strong>Languages:</strong> English (Native), German (Fluent)</p>
+      <p><strong>Technical Skills:</strong></p>
+      <ul>
+        <li>Java, Python, C#, C++, C, JavaScript</li>
+        <li>Spring Framework, HTML</li>
+        <li>Software Development, Cloud Infrastructure</li>
+        <li>Data Science, Machine Learning</li>
+      </ul>
+      <p><strong>Hobbies:</strong> Reading, Travelling</p>
+    </section>
+  </main>
 
-        <div class="section">
-            <h4>Professional Experience</h4>
-            <p>11/2024 - Present</p>
-            <p>Accenture, Düsseldorf</p>
-            <p>Tech Architecture Associate</p>
-            <p>07/2021 - 03/2023</p>
-            <p>Sommer GmbH & Co. KG, Hörstel</p>
-            <p>Data Specialist</p>
-            <p>03/2020 - 07/2021</p>
-            <p>Freelance</p>
-            <p>SAP BI Developer</p>
-            </div>
-
-        <div class="section">
-            <h4>Education</h4>
-            <p>04/2023 - Present</p>
-            <p>University of York</p>
-            <p>M.Sc., Artificial Intelligence</p>
-            <p>Guest student in RWTH Aachen from October 2023 to September 2024 as a part of the degree</p>
-            <p>10/2013 - 09/2019</p>
-            <p>University of Duisburg-Essen</p>
-            <p>B.Sc., Computer Engineering</p>
-            <p>Project: Comparison of performance in KNIME and Eidominer using neural networks (March-May '18)</p>
-            <p>Thesis: Self Organising Maps (SOM) with Python (June '19-Sep '19)</p>
-        </div>
-
-        <div class="section">
-            <h4>Skills and Interests</h4>
-            <p>Languages: English (Native level), German (Fluent)</p>
-            <p>Skills:</p>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>C#</li>
-                <li>C++</li>
-                <li>C</li>
-                <li>JavaScript</li>
-                <li>Spring</li>
-                <li>HTML</li>
-                <li>Software Development</li>
-                <li>Cloud Infrastructure</li>
-                <li>Data Science</li>
-                <li>Machine Learning</li>
-            </ul>
-            <p>Hobbies: Reading and Travelling</p>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Nihar Ranjan</p>
-    </footer>
-    
+  <footer>
+    &copy; 2024 Nihar Ranjan
+  </footer>
 </body>
 </html>
 
