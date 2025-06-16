@@ -11,7 +11,6 @@ author: "Nihar Ranjan"
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }}</title>
   <style>
-    /* Base reset */
     * {
       box-sizing: border-box;
     }
@@ -23,7 +22,7 @@ author: "Nihar Ranjan"
         Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       margin: 0;
       padding: 1.5rem 2rem;
-      color: #2d333b; /* dark gray */
+      color: #2d333b;
       line-height: 1.6;
       max-width: 900px;
       margin-left: auto;
@@ -34,23 +33,27 @@ author: "Nihar Ranjan"
       margin-bottom: 3rem;
     }
     header h1 {
-      font-weight: 700;
-      font-size: 2.8rem;
+      font-weight: 900; /* Extra Bold */
+      font-size: 3rem;
       margin-bottom: 0.2rem;
-      color: #0052cc; /* strong blue for name */
+      color: #0052cc;
+      font-family: 'Segoe UI Black', 'Arial Black', sans-serif;
+      letter-spacing: 1.2px;
     }
     header h2 {
-      font-weight: 500;
-      color: #57606a; /* muted gray-blue for subtitle */
-      font-size: 1.25rem;
+      font-weight: 600; /* Semi Bold */
+      color: #57606a;
+      font-size: 1.3rem;
       margin-top: 0;
       font-style: italic;
+      font-family: 'Segoe UI Semibold', 'Arial', sans-serif;
+      letter-spacing: 0.5px;
     }
 
     section {
       margin-bottom: 2.5rem;
       padding-bottom: 1rem;
-      border-bottom: 1px solid #d1d5db; /* lighter gray */
+      border-bottom: 1px solid #d1d5db;
       background-color: rgba(255,255,255,0.9);
       padding: 1rem 1.5rem;
       border-radius: 6px;
@@ -60,25 +63,36 @@ author: "Nihar Ranjan"
       border-bottom: none;
     }
     section h3 {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       margin-bottom: 0.75rem;
-      color: #0041a8; /* darker blue accent for section headers */
-      font-weight: 700;
+      color: #0041a8;
+      font-weight: 700; /* Bold */
       border-left: 4px solid #0052cc;
       padding-left: 0.75rem;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
+      font-family: 'Segoe UI Semibold', 'Arial', sans-serif;
     }
     .subheading {
-      font-weight: 600;
-      color: #1e2a78; /* medium blue for job titles */
-      font-size: 1.05rem;
+      font-weight: 600; /* Semi Bold */
+      color: #1e2a78;
+      font-size: 1.1rem;
       margin-bottom: 0.25rem;
+      font-family: 'Segoe UI Semibold', 'Arial', sans-serif;
+    }
+    .date {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 0.95rem;
+      color: #6b7280;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
     }
     p, ul {
       margin: 0.25rem 0 1rem 0;
       font-size: 1rem;
-      color: #3b4048; /* standard dark gray */
+      font-weight: 400;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      color: #3b4048;
     }
     ul {
       padding-left: 1.25rem;
@@ -87,6 +101,7 @@ author: "Nihar Ranjan"
     a {
       color: #0052cc;
       text-decoration: none;
+      font-weight: 600;
     }
     a:hover {
       text-decoration: underline;
@@ -104,19 +119,20 @@ author: "Nihar Ranjan"
       text-align: center;
       margin-top: 4rem;
       font-size: 0.9rem;
-      color: #818a99; /* lighter gray */
+      color: #818a99;
       border-top: 1px solid #d1d5db;
       padding-top: 1rem;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
     }
     @media (max-width: 600px) {
       body {
         padding: 1rem;
       }
       header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
       section h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
       }
     }
   </style>
@@ -124,14 +140,14 @@ author: "Nihar Ranjan"
 <body>
   <header>
     <h1>Nihar Ranjan</h1>
-    <h2>Software Engineer | Tech Architecture Associate</h2>
+    <h2>Tech Architecture Associate</h2>
   </header>
 
   <main>
     <section>
       <h3>Contact</h3>
       <ul class="contact-list">
-        <li>📍 <span style="color:#6b7280;">Bimarcstrasse 60, 51373 Leverkusen, Germany</span></li>
+        <li>📍 <span class="date">Bimarcstrasse 60, 51373 Leverkusen, Germany</span></li>
         <li>📞 <a href="tel:+4915217566352">+49 1521 756 6352</a></li>
         <li>✉️ <a href="mailto:niharranjan91@gmail.com">niharranjan91@gmail.com</a></li>
       </ul>
@@ -141,15 +157,15 @@ author: "Nihar Ranjan"
       <h3>Professional Experience</h3>
       <div>
         <p class="subheading">Tech Architecture Associate</p>
-        <p><strong>Accenture, Düsseldorf</strong> — <span style="color:#6b7280;">Nov 2024 - Present</span></p>
+        <p><strong>Accenture, Düsseldorf</strong> — <span class="date">Nov 2024 - Present</span></p>
       </div>
       <div>
         <p class="subheading">Data Specialist</p>
-        <p><strong>Sommer GmbH & Co. KG, Hörstel</strong> — <span style="color:#6b7280;">Jul 2021 - Mar 2023</span></p>
+        <p><strong>Sommer GmbH & Co. KG, Hörstel</strong> — <span class="date">Jul 2021 - Mar 2023</span></p>
       </div>
       <div>
-        <p class="subheading">SAP BI Developer (Freelance)</p>
-        <p><span style="color:#6b7280;">Mar 2020 - Jul 2021</span></p>
+        <p class="subheading">SAP BI Developer-Freelance</p>
+        <p><span class="date">Mar 2020 - Jul 2021</span></p>
       </div>
     </section>
 
@@ -157,14 +173,14 @@ author: "Nihar Ranjan"
       <h3>Education</h3>
       <div>
         <p class="subheading">M.Sc. Artificial Intelligence</p>
-        <p><strong>University of York</strong> — <span style="color:#6b7280;">Apr 2023 - Present</span></p>
-        <p><em>Guest student at RWTH Aachen (Oct 2023 - Sep 2024)</em></p>
+        <p><strong>University of York</strong> — <span class="date">Apr 2023 - Present</span></p>
+        <p><em>Guest student at RWTH Aachen from Oct 2023 to Sep 2024 as a part of the degree</em></p>
       </div>
       <div>
         <p class="subheading">B.Sc. Computer Engineering</p>
-        <p><strong>University of Duisburg-Essen</strong> — <span style="color:#6b7280;">Oct 2013 - Sep 2019</span></p>
-        <p>Project: Performance comparison in KNIME and Eidominer using neural networks (Mar-May 2018)</p>
-        <p>Thesis: Self Organising Maps (SOM) with Python (Jun-Sep 2019)</p>
+        <p><strong>University of Duisburg-Essen</strong> — <span class="date">Oct 2013 - Sep 2019</span></p>
+        <p>Project: Performance comparison in KNIME and Eidominer using neural networks </p>
+        <p>Thesis: Self Organising Maps (SOM) with Python </p>
       </div>
     </section>
 
@@ -187,5 +203,6 @@ author: "Nihar Ranjan"
   </footer>
 </body>
 </html>
+
 
 
